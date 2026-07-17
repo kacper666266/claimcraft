@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ClaimCraft | Grants and Claims Support</title>
+
+  <meta
+    name="description"
+    content="ClaimCraft helps individuals and businesses identify suitable government grants, prepare applications and access initial guidance for selected claims."
+  >
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #17233c;
+      background: #f7f9fc;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: min(1120px, 90%);
+      margin: auto;
+    }
+
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #e4e9f1;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .logo {
+      font-size: 1.65rem;
+      font-weight: 800;
+      color: #123a72;
+      text-decoration: none;
+    }
+
+    .logo span {
+      color: #1aa7a1;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: #17233c;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .hero {
+      background:
+        linear-gradient(135deg, rgba(10, 44, 91, 0.96), rgba(18, 104, 126, 0.90));
+      color: white;
+      padding: 110px 0;
+    }
+
+    .hero-content {
+      max-width: 760px;
+    }
+
+    .eyebrow {
+      color: #8ce5df;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-size: clamp(2.4rem, 6vw, 4.5rem);
+      line-height: 1.08;
+      margin-bottom: 22px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 680px;
+      margin-bottom: 32px;
+      color: #eaf4ff;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: 0.2s ease;
+    }
+
+    .button-primary {
+      background: #1bc1b6;
+      color: #09263c;
+    }
+
+    .button-secondary {
+      border: 2px solid white;
+      color: white;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    section {
+      padding: 86px 0;
+    }
+
+    .section-heading {
+      max-width: 720px;
+      margin-bottom: 42px;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin-bottom: 14px;
+      color: #123a72;
+    }
+
+    .section-heading p {
+      color: #59657a;
+      font-size: 1.08rem;
+    }
+
+    .services {
+      background: #ffffff;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .card {
+      background: #f7f9fc;
+      border: 1px solid #e1e7ef;
+      border-radius: 14px;
+      padding: 28px;
+    }
+
+    .card h3 {
+      color: #123a72;
+      margin-bottom: 12px;
+      font-size: 1.3rem;
+    }
+
+    .card p {
+      color: #59657a;
+    }
+
+    .process {
+      background: #eef4f9;
+    }
+
+    .step-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: #1bc1b6;
+      color: #09263c;
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .about-box {
+      background: #123a72;
+      color: white;
+      padding: 36px;
+      border-radius: 16px;
+    }
+
+    .about-box ul {
+      padding-left: 22px;
+    }
+
+    .about-box li {
+      margin-bottom: 12px;
+    }
+
+    .contact {
+      background: #102f59;
+      color: white;
+    }
+
+    .contact h2 {
+      color: white;
+    }
+
+    .contact p {
+      color: #e4edf8;
+    }
+
+    .contact-box {
+      background: white;
+      color: #17233c;
+      padding: 32px;
+      border-radius: 14px;
+      max-width: 700px;
+    }
+
+    .contact-box p {
+      color: #59657a;
+      margin-bottom: 12px;
+    }
+
+    .contact-box a {
+      color: #123a72;
+      font-weight: 700;
+    }
+
+    .notice {
+      margin-top: 26px;
+      font-size: 0.92rem;
+      color: #cbd7e7;
+      max-width: 820px;
+    }
+
+    footer {
+      background: #081d38;
+      color: #cbd7e7;
+      text-align: center;
+      padding: 26px 0;
+    }
+
+    @media (max-width: 800px) {
+      .nav-links {
+        display: none;
+      }
+
+      .grid,
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 82px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <nav>
+        <a class="logo" href="#">Claim<span>Craft</span></a>
+
+        <ul class="nav-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#process">How It Works</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="eyebrow">Clear guidance. Practical support.</div>
+
+          <h1>Helping You Navigate Grants and Claims</h1>
+
+          <p>
+            ClaimCraft helps individuals and businesses identify suitable
+            government funding opportunities, prepare stronger applications
+            and access initial guidance for selected claims.
+          </p>
+
+          <div class="buttons">
+            <a class="button button-primary" href="mailto:info@claimcraft.co.uk">
+              Request a Free Initial Call
+            </a>
+
+            <a class="button button-secondary" href="tel:+447552350068">
+              Call 07552 350068
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <h2>How ClaimCraft Can Help</h2>
+          <p>
+            Straightforward support from the first enquiry through to the next
+            appropriate step.
+          </p>
+        </div>
+
+        <div class="grid">
+
+          <article class="card">
+            <h3>Government Grant Search</h3>
+            <p>
+              We help identify relevant funding opportunities based on your
+              circumstances, location, project and eligibility.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Application Support</h3>
+            <p>
+              We help organise the required information and support you in
+              preparing a clear and complete grant application.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Eligibility Review</h3>
+            <p>
+              We carry out an initial review to help you understand which
+              opportunities may be suitable before you invest more time.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Vehicle Emissions Enquiries</h3>
+            <p>
+              We provide initial information and referral support for selected
+              vehicle emissions enquiries where appropriate.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Claims Referral Support</h3>
+            <p>
+              Where specialist or regulated assistance is required, we can help
+              direct your enquiry to an appropriate authorised professional.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Document Preparation</h3>
+            <p>
+              We help clients collect, review and organise supporting documents
+              before an application or referral.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="process" id="process">
+      <div class="container">
+        <div class="section-heading">
+          <h2>How It Works</h2>
+          <p>A simple process designed to save you time and reduce confusion.</p>
+        </div>
+
+        <div class="grid">
+
+          <article class="card">
+            <div class="step-number">1</div>
+            <h3>Tell Us What You Need</h3>
+            <p>
+              Contact us by phone or email and briefly explain your situation.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="step-number">2</div>
+            <h3>Initial Review</h3>
+            <p>
+              We review the information and identify possible grants, support
+              routes or appropriate next steps.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="step-number">3</div>
+            <h3>Practical Support</h3>
+            <p>
+              We help you prepare the information, application or referral
+              needed to move forward.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="about-grid">
+
+          <div>
+            <div class="section-heading">
+              <h2>About ClaimCraft</h2>
+              <p>
+                ClaimCraft was created to make complicated application and
+                claims processes easier to understand.
+              </p>
+            </div>
+
+            <p>
+              Our aim is to provide clear initial guidance, practical
+              administrative support and access to suitable specialists where
+              regulated or legal assistance is required.
+            </p>
+          </div>
+
+          <div class="about-box">
+            <h3>Our Approach</h3>
+            <ul>
+              <li>Clear and honest communication</li>
+              <li>No guarantee of grant funding or compensation</li>
+              <li>Transparent next steps</li>
+              <li>Referral to authorised specialists where required</li>
+              <li>Respect for client privacy and information</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Speak to ClaimCraft</h2>
+          <p>
+            Tell us briefly what support you are looking for and we will explain
+            the next available step.
+          </p>
+        </div>
+
+        <div class="contact-box">
+          <p>
+            <strong>Phone:</strong>
+            <a href="tel:+447552350068">07552 350068</a>
+          </p>
+
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:info@claimcraft.co.uk">
+              info@claimcraft.co.uk
+            </a>
+          </p>
+
+          <p>
+            <strong>Website:</strong> claimcraft.co.uk
+          </p>
+        </div>
+
+        <p class="notice">
+          ClaimCraft provides general information, administrative support and
+          referral assistance. We do not guarantee grant approval,
+          compensation or a successful outcome. Where a service requires
+          regulated legal or claims-management activity, clients may be
+          referred to an appropriately authorised provider.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      © 2026 ClaimCraft. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
