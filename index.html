@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  
   <title>ClaimCraft | Grants and Claims Support</title>
 
   <meta
@@ -429,6 +430,189 @@
         </div>
       </div>
     </section>
+<section id="claims-checkers" class="claims-checkers">
+  <div class="container">
+
+    <div class="section-heading">
+      <h2>Check Your Potential Claim</h2>
+      <p>
+        Choose the type of claim and complete the short form below.
+        This is an initial enquiry only and does not guarantee compensation.
+      </p>
+    </div>
+
+    <div class="claims-grid">
+
+      <!-- CAR FINANCE CLAIMS -->
+      <div class="claim-form-card">
+        <h3>Car Finance Claim</h3>
+        <p>
+          Check whether a previous PCP, HP or other car finance agreement
+          may require further review.
+        </p>
+
+        <form>
+          <label for="finance-name">Full name</label>
+          <input
+            type="text"
+            id="finance-name"
+            name="finance-name"
+            placeholder="Your full name"
+            required
+          >
+
+          <label for="finance-email">Email address</label>
+          <input
+            type="email"
+            id="finance-email"
+            name="finance-email"
+            placeholder="Your email address"
+            required
+          >
+
+          <label for="finance-phone">Phone number</label>
+          <input
+            type="tel"
+            id="finance-phone"
+            name="finance-phone"
+            placeholder="Your phone number"
+            required
+          >
+
+          <label for="finance-provider">Finance provider</label>
+          <input
+            type="text"
+            id="finance-provider"
+            name="finance-provider"
+            placeholder="Example: Black Horse, Santander"
+          >
+
+          <label for="finance-year">Approximate agreement year</label>
+          <input
+            type="number"
+            id="finance-year"
+            name="finance-year"
+            min="2000"
+            max="2026"
+            placeholder="Example: 2018"
+          >
+
+          <label for="finance-message">Additional information</label>
+          <textarea
+            id="finance-message"
+            name="finance-message"
+            rows="4"
+            placeholder="Tell us briefly about the finance agreement"
+          ></textarea>
+
+          <button type="submit">Check My Car Finance Claim</button>
+        </form>
+      </div>
+
+      <!-- DIESEL EMISSIONS CLAIMS -->
+      <div class="claim-form-card">
+        <h3>Diesel Emissions Claim</h3>
+        <p>
+          Check whether your diesel vehicle may require further review
+          in relation to emissions allegations.
+        </p>
+
+        <form>
+          <label for="diesel-name">Full name</label>
+          <input
+            type="text"
+            id="diesel-name"
+            name="diesel-name"
+            placeholder="Your full name"
+            required
+          >
+
+          <label for="diesel-email">Email address</label>
+          <input
+            type="email"
+            id="diesel-email"
+            name="diesel-email"
+            placeholder="Your email address"
+            required
+          >
+
+          <label for="diesel-phone">Phone number</label>
+          <input
+            type="tel"
+            id="diesel-phone"
+            name="diesel-phone"
+            placeholder="Your phone number"
+            required
+          >
+
+          <label for="vehicle-registration">Vehicle registration</label>
+          <input
+            type="text"
+            id="vehicle-registration"
+            name="vehicle-registration"
+            placeholder="Example: AB12 CDE"
+            required
+          >
+
+          <label for="vehicle-make">Vehicle manufacturer</label>
+          <select id="vehicle-make" name="vehicle-make" required>
+            <option value="">Select manufacturer</option>
+            <option>Audi</option>
+            <option>BMW</option>
+            <option>Ford</option>
+            <option>Hyundai</option>
+            <option>Kia</option>
+            <option>Land Rover</option>
+            <option>Mazda</option>
+            <option>Mercedes-Benz</option>
+            <option>Nissan</option>
+            <option>Peugeot</option>
+            <option>Renault</option>
+            <option>Toyota</option>
+            <option>Vauxhall</option>
+            <option>Volkswagen</option>
+            <option>Volvo</option>
+            <option>Other</option>
+          </select>
+
+          <label for="vehicle-model">Vehicle model</label>
+          <input
+            type="text"
+            id="vehicle-model"
+            name="vehicle-model"
+            placeholder="Example: Qashqai"
+            required
+          >
+
+          <label for="vehicle-year">Year of registration</label>
+          <input
+            type="number"
+            id="vehicle-year"
+            name="vehicle-year"
+            min="2000"
+            max="2026"
+            placeholder="Example: 2017"
+            required
+          >
+
+          <button type="submit">Check My Diesel Claim</button>
+        </form>
+      </div>
+
+    </div>
+
+    <p class="claims-disclaimer">
+      ClaimCraft provides general information, administrative support and
+      referral assistance. We do not guarantee eligibility, compensation
+      or a successful claim. Where regulated legal or claims-management
+      services are required, enquiries may be referred to an appropriately
+      authorised provider.
+    </p>
+
+  </div>
+</section>
+
+    
 
   
     
