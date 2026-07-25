@@ -1,4 +1,91 @@
-fixed_html = '''<!DOCTYPE html>
+fixed_html = '''<!DOCTYPE html><style>
+    .faq-section {
+        background: var(--dark);
+        padding: 5rem 2rem;
+    }
+
+    .faq-container {
+        max-width: 850px;
+        margin: 0 auto;
+    }
+
+    .faq-item {
+        background: var(--dark-light);
+        border: 1px solid rgba(255,255,255,0.07);
+        border-radius: 12px;
+        margin-bottom: 1rem;
+        overflow: hidden;
+    }
+
+    .faq-item summary {
+        padding: 1.3rem 1.5rem;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 1rem;
+        list-style: none;
+        position: relative;
+        padding-right: 3.5rem;
+    }
+
+    .faq-item summary::-webkit-details-marker {
+        display: none;
+    }
+
+    .faq-item summary::after {
+        content: "+";
+        position: absolute;
+        right: 1.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        color: var(--accent);
+        font-size: 1.5rem;
+    }
+
+    .faq-item[open] summary::after {
+        content: "−";
+    }
+
+    .faq-item p {
+        padding: 0 1.5rem 1.5rem;
+        color: var(--text-muted);
+        line-height: 1.7;
+    }
+</style>
+
+<section class="faq-section" id="faq">
+    <div class="section-header">
+        <h2>Frequently Asked Questions</h2>
+        <p>Answers to common questions about making a claim</p>
+    </div>
+
+    <div class="faq-container">
+        <details class="faq-item">
+            <summary>How do I know if I may have a claim?</summary>
+            <p>Complete our short eligibility form with your contact and vehicle details. Your information will be reviewed and you will be contacted about the possible next steps.</p>
+        </details>
+
+        <details class="faq-item">
+            <summary>Does it cost anything to check my eligibility?</summary>
+            <p>No. Checking your initial eligibility is free and there is no obligation to continue with a claim.</p>
+        </details>
+
+        <details class="faq-item">
+            <summary>Can I claim if I no longer own the vehicle?</summary>
+            <p>You may still be eligible in some circumstances. Provide as much information as you can, even if the vehicle has been sold or returned.</p>
+        </details>
+
+        <details class="faq-item">
+            <summary>What information will I need?</summary>
+            <p>It helps to provide your name, telephone number, email address, vehicle registration and any details you remember about the finance agreement or vehicle.</p>
+        </details>
+
+        <details class="faq-item">
+            <summary>How long will it take to receive a response?</summary>
+            <p>We aim to review new enquiries as quickly as possible. The time required for a full claim will depend on the circumstances and the organisation handling it.</p>
+        </details>
+    </div>
+</section>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
