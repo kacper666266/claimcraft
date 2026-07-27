@@ -906,15 +906,6 @@ fixed_html = '''<!DOCTYPE html><style>
     </script>
 
 </body>
-</html>'''
+</html>
 
-# Fix the escaped quotes from Python string
-fixed_html = fixed_html.replace("\\'", "'")
-fixed_html = fixed_html.replace("\\'", "'")
-
-with open('/mnt/agents/output/index.html', 'w', encoding='utf-8') as f:
-    f.write(fixed_html)
-
-print("Fixed file saved!")
-print(f"Size: {len(fixed_html)} chars")
 
