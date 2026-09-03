@@ -557,3 +557,1171 @@
   }
 
   /* Full Form Section */
+  .form-section {
+    padding: 60px 24px;
+    max-width: 750px;
+    margin: 0 auto;
+  }
+  .form-card {
+    background: #1e293b;
+    border-radius: 20px;
+    padding: 32px 24px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+  }
+  .form-group { margin-bottom: 18px; }
+  .form-group label {
+    display: block;
+    font-size: 0.9rem;
+    color: #cbd5e1;
+    margin-bottom: 6px;
+  }
+  .form-group label .required { color: #f87171; }
+  .form-input {
+    width: 100%;
+    padding: 14px 16px;
+    background: #0f172a;
+    border: 2px solid #334155;
+    border-radius: 12px;
+    color: #f8fafc;
+    font-size: 1rem;
+    font-family: inherit;
+  }
+  .form-input:focus { outline: none; border-color: #fbbf24; }
+  .form-input::placeholder { color: #64748b; }
+  select.form-input { appearance: none; cursor: pointer; }
+  textarea.form-input { resize: vertical; min-height: 80px; }
+  .form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  .checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+  .checkbox-group input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-top: 3px;
+    accent-color: #fbbf24;
+    flex-shrink: 0;
+    cursor: pointer;
+  }
+  .checkbox-group label {
+    color: #94a3b8;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    cursor: pointer;
+  }
+  .checkbox-group label a { color: #fbbf24; text-decoration: underline; }
+  .checkbox-group label a:hover { color: #f59e0b; }
+  .form-status {
+    text-align: center;
+    padding: 14px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    display: none;
+    font-size: 0.95rem;
+  }
+  .form-status.show { display: block; }
+  .h-captcha-container {
+    margin-bottom: 18px;
+  }
+
+  /* FAQ */
+  .faq-section {
+    padding: 60px 24px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .faq-item {
+    background: #1e293b;
+    border-radius: 14px;
+    margin-bottom: 12px;
+    overflow: hidden;
+  }
+  .faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    color: #f8fafc;
+    padding: 18px 20px;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: inherit;
+    gap: 12px;
+  }
+  .faq-toggle {
+    color: #fbbf24;
+    font-size: 1.4rem;
+    font-weight: 300;
+    transition: transform 0.3s;
+    flex-shrink: 0;
+  }
+  .faq-item.open .faq-toggle { transform: rotate(45deg); }
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease, padding 0.35s ease;
+    padding: 0 20px;
+    color: #94a3b8;
+    font-size: 0.95rem;
+  }
+  .faq-item.open .faq-answer {
+    max-height: 500px;
+    padding: 0 20px 18px;
+  }
+  .faq-answer a { color: #fbbf24; text-decoration: underline; }
+  .faq-answer a:hover { color: #f59e0b; }
+
+  /* Contact */
+  .contact-section {
+    padding: 60px 24px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 30px;
+  }
+  .contact-method {
+    background: #1e293b;
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.2s;
+  }
+  .contact-method:hover { transform: translateY(-3px); }
+  .contact-icon {
+    font-size: 1.8rem;
+    margin-bottom: 4px;
+  }
+  .contact-method h4 { font-size: 1.1rem; }
+  .contact-method a {
+    color: #fbbf24;
+    font-size: 1.05rem;
+    font-weight: 600;
+  }
+  .contact-method a:hover { text-decoration: underline; }
+  .contact-method p { color: #94a3b8; font-size: 0.9rem; }
+
+  /* Footer */
+  footer {
+    background: #0a0f1d;
+    padding: 40px 24px 30px;
+    text-align: center;
+    border-top: 1px solid #1e293b;
+  }
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+  .footer-links a {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+  }
+  .footer-links a:hover { color: #fbbf24; }
+  .footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .footer-contact a {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  .footer-contact a:hover { color: #fbbf24; }
+  .footer-badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  .footer-badge {
+    color: #64748b;
+    font-size: 0.8rem;
+  }
+  .footer-bottom {
+    color: #475569;
+    font-size: 0.8rem;
+  }
+  .footer-bottom a { color: #64748b; text-decoration: underline; }
+  .footer-bottom a:hover { color: #fbbf24; }
+  .disclaimer {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    color: #64748b;
+    font-size: 0.75rem;
+    line-height: 1.5;
+  }
+
+  /* WhatsApp Float */
+  .whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25d366;
+    color: white;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    box-shadow: 0 4px 15px rgba(37,211,102,0.4);
+    z-index: 99;
+    transition: transform 0.2s;
+  }
+  .whatsapp-float:hover { transform: scale(1.1); }
+
+  /* Scroll to top */
+  .scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 86px;
+    background: #334155;
+    color: #f8fafc;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    z-index: 98;
+    border: none;
+    transition: background 0.2s;
+  }
+  .scroll-top:hover { background: #475569; }
+
+  /* Section anchors */
+  .section-anchor {
+    scroll-margin-top: 80px;
+  }
+
+  /* Desktop */
+  @media (min-width: 768px) {
+    .hero { padding: 80px 24px 50px; }
+    .hero h1 { font-size: 3rem; }
+    .hero p { font-size: 1.2rem; }
+    .hero-btns { flex-direction: row; justify-content: center; }
+    .stats { grid-template-columns: repeat(4, 1fr); }
+    .service-cards { flex-direction: row; }
+    .service-card { flex: 1; }
+    .steps { flex-direction: row; }
+    .step { flex: 1; flex-direction: column; text-align: center; align-items: center; }
+    .checker-card { padding: 40px; }
+    .form-card { padding: 40px; }
+    .form-row { flex-direction: row; }
+    .form-row .form-group { flex: 1; }
+    .contact-methods { flex-direction: row; }
+    .contact-method { flex: 1; }
+    .nav-links { display: flex; }
+    .nav-cta { display: inline-block; }
+    .menu-btn { display: none; }
+    .mobile-menu { display: none !important; }
+  }
+
+  @media (min-width: 1024px) {
+    .hero h1 { font-size: 3.4rem; }
+  }
+
+  /* Focus states for accessibility */
+  button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+    outline: 2px solid #fbbf24;
+    outline-offset: 2px;
+  }
+
+  /* Reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<div class="nav-wrapper">
+  <nav>
+    <a href="#" class="logo">Claim<span>Craft</span></a>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#checker">Check Eligibility</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#claims">Motor Finance Claims</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a href="#checker" class="nav-cta">Check Eligibility</a>
+    <button class="menu-btn" onclick="toggleMenu()" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home" onclick="toggleMenu()">Home</a>
+    <a href="#checker" onclick="toggleMenu()">Check Eligibility</a>
+    <a href="#how-it-works" onclick="toggleMenu()">How It Works</a>
+    <a href="#claims" onclick="toggleMenu()">Motor Finance Claims</a>
+    <a href="#faq" onclick="toggleMenu()">FAQ</a>
+    <a href="#contact" onclick="toggleMenu()">Contact</a>
+    <a href="#checker" class="nav-cta-mobile" onclick="toggleMenu()">Check Eligibility</a>
+  </div>
+</div>
+
+<!-- Hero -->
+<section class="hero section-anchor" id="home">
+  <div class="trust-badges" style="padding-top:0;padding-bottom:20px;">
+    <span class="badge">&#10003; No Win, No Fee</span>
+    <span class="badge">&#10003; UK-Based</span>
+    <span class="badge">&#10003; Free Check</span>
+  </div>
+  <h1>Could Your Car Finance Agreement Have Included an <span>Unfair Commission</span>?</h1>
+  <p>If you took out car finance using PCP, HP or another motor finance agreement, you may be able to check whether your agreement was affected by undisclosed commission arrangements. Free, no-obligation eligibility check.</p>
+  <div class="hero-btns">
+    <a href="#checker" class="btn-primary">Check My Eligibility &#8594;</a>
+    <a href="https://wa.me/447344537884" target="_blank" class="btn-whatsapp" rel="noopener">&#128172; WhatsApp Us</a>
+  </div>
+</section>
+
+<!-- FCA Information Box -->
+<div class="info-box">
+  <h4>&#9888; Important Regulatory Update</h4>
+  <p>The FCA Motor Finance Consumer Redress Scheme was introduced in March 2026, but parts of the scheme are currently suspended pending Upper Tribunal proceedings. The regulatory and legal position may change. Information on this website is general information and does not constitute legal or financial advice.</p>
+</div>
+
+<!-- Eligibility Criteria -->
+<section class="criteria-section section-anchor" id="eligibility">
+  <h2 class="section-title">Who May Wish to Check?</h2>
+  <p class="section-subtitle">You may wish to check your potential eligibility if:</p>
+  <ul class="criteria-list">
+    <li>You financed a car using PCP, HP, Conditional Sale or another motor finance agreement</li>
+    <li>You bought or financed the vehicle in the relevant historical period (roughly 2007&#8211;2024)</li>
+    <li>The finance was arranged through a dealer or broker</li>
+    <li>You were not clearly told about any commission arrangements</li>
+    <li>You no longer own the vehicle &#8212; this does not necessarily prevent you from checking</li>
+    <li>You no longer have all your paperwork &#8212; we may still be able to help</li>
+  </ul>
+  <div class="criteria-note">
+    <strong>Please note:</strong> Not everyone will be eligible. Eligibility depends on the specific circumstances of your finance agreement. Completing our form does not guarantee that you have a claim or that compensation will be paid.
+  </div>
+</section>
+
+<!-- Claim Eligibility Checker -->
+<section class="checker-section section-anchor" id="checker">
+  <div class="checker-card">
+    <div class="checker-header">
+      <h2>Car Finance Eligibility Checker</h2>
+      <p>Answer a few quick questions to see if you may wish to have your agreement reviewed</p>
+    </div>
+
+    <div class="progress-text" id="progressText">Question 1 of 6</div>
+    <div class="progress-bar">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
+
+    <!-- Step 1 -->
+    <div class="question-step active" data-step="1">
+      <h3>Was the vehicle purchased using PCP, Hire Purchase or another finance agreement?</h3>
+      <div class="options">
+        <button class="option-btn" data-value="Yes" onclick="selectOption(this, 1)">Yes</button>
+        <button class="option-btn" data-value="No" onclick="selectOption(this, 1)">No</button>
+        <button class="option-btn" data-value="Not sure" onclick="selectOption(this, 1)">Not sure</button>
+      </div>
+      <div class="error-msg" id="error1">Please select an answer to continue.</div>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="question-step" data-step="2">
+      <h3>Was the finance agreement taken out between April 2007 and November 2024?</h3>
+      <div class="options">
+        <button class="option-btn" data-value="Yes" onclick="selectOption(this, 2)">Yes</button>
+        <button class="option-btn" data-value="No" onclick="selectOption(this, 2)">No</button>
+        <button class="option-btn" data-value="Not sure" onclick="selectOption(this, 2)">Not sure</button>
+      </div>
+      <div class="error-msg" id="error2">Please select an answer to continue.</div>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="question-step" data-step="3">
+      <h3>Was the finance arranged through a car dealer or broker?</h3>
+      <div class="options">
+        <button class="option-btn" data-value="Yes" onclick="selectOption(this, 3)">Yes</button>
+        <button class="option-btn" data-value="No" onclick="selectOption(this, 3)">No</button>
+        <button class="option-btn" data-value="Not sure" onclick="selectOption(this, 3)">Not sure</button>
+      </div>
+      <div class="error-msg" id="error3">Please select an answer to continue.</div>
+    </div>
+
+    <!-- Step 4 -->
+    <div class="question-step" data-step="4">
+      <h3>Do you know the name of the finance provider?</h3>
+      <p style="color:#94a3b8;font-size:0.9rem;margin-bottom:12px;">Optional &#8212; skip if you are not sure</p>
+      <input type="text" class="checker-input" id="financeProvider" placeholder="e.g. Black Horse, Santander, Close Brothers">
+    </div>
+
+    <!-- Step 5 -->
+    <div class="question-step" data-step="5">
+      <h3>Do you still own the vehicle?</h3>
+      <div class="options">
+        <button class="option-btn" data-value="Yes" onclick="selectOption(this, 5)">Yes</button>
+        <button class="option-btn" data-value="No" onclick="selectOption(this, 5)">No</button>
+        <button class="option-btn" data-value="Vehicle returned or sold" onclick="selectOption(this, 5)">Vehicle returned or sold</button>
+      </div>
+      <div class="error-msg" id="error5">Please select an answer to continue.</div>
+    </div>
+
+    <!-- Step 6: Contact Details -->
+    <div class="question-step" data-step="6">
+      <h3>Your Contact Details</h3>
+      <p style="color:#94a3b8;font-size:0.9rem;margin-bottom:16px;">Enter your details so we can review your enquiry.</p>
+      <div class="contact-fields">
+        <label>Full Name <span class="required">*</span></label>
+        <input type="text" class="checker-input" id="cfName" placeholder="John Smith">
+        <div class="error-msg" id="errorName">Please enter your full name.</div>
+
+        <label>Phone Number <span class="required">*</span></label>
+        <input type="tel" class="checker-input" id="cfPhone" placeholder="07XXX XXXXXX">
+        <div class="error-msg" id="errorPhone">Please enter your phone number.</div>
+
+        <label>Email Address <span class="required">*</span></label>
+        <input type="email" class="checker-input" id="cfEmail" placeholder="you@email.com">
+        <div class="error-msg" id="errorEmail">Please enter a valid email address.</div>
+
+        <label>Vehicle Registration</label>
+        <input type="text" class="checker-input" id="cfReg" placeholder="AB12 CDE">
+
+        <label>Optional Message</label>
+        <textarea class="checker-input" id="cfMessage" rows="3" placeholder="Tell us briefly about your situation..."></textarea>
+      </div>
+    </div>
+
+    <!-- Result: Eligible -->
+    <div class="result-screen result-eligible" id="resultEligible">
+      <div class="result-icon">&#10003;</div>
+      <h3>You may be eligible</h3>
+      <p>Based on your answers, you may be eligible to have your motor finance agreement reviewed. This is only an initial eligibility assessment and does not guarantee compensation or that you have a valid claim.</p>
+      <div class="contact-fields" id="eligibleFields"></div>
+      <div class="submit-status" id="eligibleStatus"></div>
+      <button class="btn-primary" id="eligibleSubmit" onclick="submitResult('eligible')" style="width:100%;">Submit My Enquiry &#8594;</button>
+    </div>
+
+    <!-- Result: More Info -->
+    <div class="result-screen result-moreinfo" id="resultMoreInfo">
+      <div class="result-icon">?</div>
+      <h3>We need more information</h3>
+      <p>We need some additional information before your potential enquiry can be assessed. Submit your details and our team will review your enquiry.</p>
+      <div class="contact-fields" id="moreinfoFields"></div>
+      <div class="submit-status" id="moreinfoStatus"></div>
+      <button class="btn-primary" id="moreinfoSubmit" onclick="submitResult('moreinfo')" style="width:100%;">Submit My Enquiry &#8594;</button>
+    </div>
+
+    <!-- Result: Unlikely -->
+    <div class="result-screen result-unlikely" id="resultUnlikely">
+      <div class="result-icon">!</div>
+      <h3>You may be unlikely to qualify</h3>
+      <p>Based on the information provided, you may be unlikely to qualify. However, you can still submit your details if you would like your agreement to be reviewed.</p>
+      <div class="contact-fields" id="unlikelyFields"></div>
+      <div class="submit-status" id="unlikelyStatus"></div>
+      <button class="btn-primary" id="unlikelySubmit" onclick="submitResult('unlikely')" style="width:100%;">Submit My Enquiry &#8594;</button>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="checker-nav" id="checkerNav">
+      <button class="btn-outline" id="backBtn" onclick="goBack()" disabled>&#8592; Back</button>
+      <button class="btn-primary" id="continueBtn" onclick="goNext()">Continue &#8594;</button>
+    </div>
+  </div>
+</section>
+<!-- Stats -->
+<section class="stats">
+  <div class="stat">
+    <h3>Millions</h3>
+    <p>Agreements Potentially Affected</p>
+  </div>
+  <div class="stat">
+    <h3>2007&#8211;2024</h3>
+    <p>Relevant Time Period</p>
+  </div>
+  <div class="stat">
+    <h3>0%</h3>
+    <p>Upfront Fees to Check</p>
+  </div>
+  <div class="stat">
+    <h3>Free</h3>
+    <p>Eligibility Assessment</p>
+  </div>
+</section>
+
+<!-- Motor Finance Claims Section -->
+<section class="services-section section-anchor" id="claims">
+  <h2 class="section-title">Motor Finance Claims</h2>
+  <p class="section-subtitle">Helping UK consumers understand whether their car finance agreement may have been affected by commission arrangements</p>
+  <div class="service-cards">
+    <div class="service-card">
+      <div class="service-icon">&#128663;</div>
+      <h3>What is Motor Finance Commission?</h3>
+      <p>When you took out car finance, the dealer or broker may have received a commission from the lender. In many cases, this commission was linked to the interest rate you were charged &#8212; the higher the rate, the more commission the dealer earned. If this was not clearly explained to you, it may have affected the fairness of your agreement.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">&#128200;</div>
+      <h3>What is a Discretionary Commission Arrangement?</h3>
+      <p>A Discretionary Commission Arrangement (DCA) is where a dealer or broker had the ability to adjust the interest rate on your finance agreement, with their commission increasing as the rate went up. The FCA banned this practice in January 2021, but many historic agreements may have been affected.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">&#128161;</div>
+      <h3>Why Can Commission Disclosure Matter?</h3>
+      <p>If you were not told that the dealer or broker would receive a commission, and especially if that commission was linked to your interest rate, you may not have been able to make a fully informed decision about your finance agreement. This could mean the relationship was unfair.</p>
+    </div>
+  </div>
+  <div class="service-card" style="margin-top:24px;">
+    <div class="service-icon">&#9878;</div>
+    <h3>The FCA Motor Finance Consumer Redress Scheme</h3>
+    <p>Following the Supreme Court judgment in <em>Johnson v FirstRand Bank</em> in August 2025, the Financial Conduct Authority (FCA) introduced the Motor Finance Consumer Redress Scheme in March 2026 to address potentially unfair relationships in historic motor finance agreements.</p>
+    <p style="margin-top:12px;">However, parts of the scheme have been suspended by the Upper Tribunal pending the outcome of legal challenges. As a result:</p>
+    <ul>
+      <li>Firms are not currently required to calculate or pay compensation under the original timetable</li>
+      <li>The original decision and payment dates no longer apply</li>
+      <li>No payment under the scheme is guaranteed</li>
+      <li>If the scheme proceeds, first payments are expected in 2027 at the earliest</li>
+      <li>The FCA has stated that firms should also plan for a possible &#8220;no scheme&#8221; scenario</li>
+    </ul>
+    <p style="margin-top:12px; color:#fbbf24;">The regulatory and legal position may change as the Upper Tribunal proceedings continue. We will keep you informed of any relevant updates.</p>
+  </div>
+</section>
+
+<!-- How It Works -->
+<section class="how-it-works section-anchor" id="how-it-works">
+  <h2 class="section-title">How It Works</h2>
+  <p class="section-subtitle">A simple process to help you understand whether your agreement may be affected</p>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div>
+        <h4>Complete Eligibility Check</h4>
+        <p>Fill in our quick form with your contact details and information about your finance agreement. It takes just a few minutes.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div>
+        <h4>We Review the Information</h4>
+        <p>Our team reviews your enquiry and the details you have provided about your finance agreement and circumstances.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div>
+        <h4>Agreement Details Identified</h4>
+        <p>Where possible, we identify relevant information about your finance agreement and lender to assess the potential next steps.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div>
+        <h4>Informed About Possible Next Steps</h4>
+        <p>We contact you to explain what we have found and what options may be available to you. No outcome is guaranteed.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Full Eligibility Form -->
+<section class="form-section section-anchor" id="full-form">
+  <div class="form-card">
+    <h2 style="text-align:center;margin-bottom:8px;font-size:1.6rem;">Check Your Eligibility</h2>
+    <p style="text-align:center;color:#94a3b8;margin-bottom:24px;font-size:0.95rem;">Complete the form below and we will review your enquiry</p>
+    <div class="form-status" id="formStatus"></div>
+    <form id="claimForm" action="https://formspree.io/f/xgognyzk" method="POST">
+      <div class="form-row">
+        <div class="form-group">
+          <label>First Name <span class="required">*</span></label>
+          <input type="text" class="form-input" name="first_name" placeholder="John" required>
+        </div>
+        <div class="form-group">
+          <label>Last Name <span class="required">*</span></label>
+          <input type="text" class="form-input" name="last_name" placeholder="Smith" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Email Address <span class="required">*</span></label>
+          <input type="email" class="form-input" name="email" placeholder="you@email.com" required>
+        </div>
+        <div class="form-group">
+          <label>Phone Number <span class="required">*</span></label>
+          <input type="tel" class="form-input" name="phone" placeholder="07XXX XXXXXX" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Vehicle Registration</label>
+          <input type="text" class="form-input" name="vehicle_reg" placeholder="AB12 CDE (optional)">
+        </div>
+        <div class="form-group">
+          <label>Vehicle Make</label>
+          <input type="text" class="form-input" name="vehicle_make" placeholder="e.g. Ford (optional)">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Vehicle Model</label>
+          <input type="text" class="form-input" name="vehicle_model" placeholder="e.g. Focus (optional)">
+        </div>
+        <div class="form-group">
+          <label>Approximate Year Finance Started</label>
+          <input type="text" class="form-input" name="finance_year" placeholder="e.g. 2018 (optional)">
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Finance Type <span class="required">*</span></label>
+        <select class="form-input" name="finance_type" required>
+          <option value="">Select finance type...</option>
+          <option value="PCP">PCP</option>
+          <option value="Hire Purchase (HP)">Hire Purchase (HP)</option>
+          <option value="Conditional Sale">Conditional Sale</option>
+          <option value="Personal Loan used for vehicle">Personal Loan used for vehicle</option>
+          <option value="Not Sure">Not Sure</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Finance Provider / Lender</label>
+        <input type="text" class="form-input" name="finance_provider" placeholder="e.g. Black Horse, Santander (optional)">
+      </div>
+      <div class="form-group">
+        <label>Dealer</label>
+        <input type="text" class="form-input" name="dealer" placeholder="Name of dealership (optional)">
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Do you still own the vehicle? <span class="required">*</span></label>
+          <select class="form-input" name="still_own_vehicle" required>
+            <option value="">Select...</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Do you still have the finance agreement? <span class="required">*</span></label>
+          <select class="form-input" name="still_have_agreement" required>
+            <option value="">Select...</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Not sure">Not sure</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Were you told the dealer/broker may receive commission? <span class="required">*</span></label>
+        <select class="form-input" name="told_about_commission" required>
+          <option value="">Select...</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+          <option value="Not sure">Not sure</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Message / Additional Information</label>
+        <textarea class="form-input" name="message" rows="3" placeholder="Tell us briefly about your situation (optional)"></textarea>
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="accuracy" name="accuracy_confirmed" value="yes" required>
+        <label for="accuracy">I confirm that the information I have provided is accurate to the best of my knowledge. <span class="required">*</span></label>
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="privacy" name="privacy_agreed" value="yes" required>
+        <label for="privacy">I agree that ClaimCraft may use my information to assess my enquiry and contact me about it. Please see our <a href="#">Privacy Policy</a>. <span class="required">*</span></label>
+      </div>
+      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+      <button type="submit" class="btn-primary" style="width:100%;">Submit My Enquiry &#8594;</button>
+      <p style="text-align:center;color:#64748b;font-size:0.85rem;margin-top:14px;">Your data is secure. We never share your information with third parties without your consent.</p>
+      <p style="text-align:center;color:#64748b;font-size:0.8rem;margin-top:10px;">
+        <a href="#" style="color:#64748b;text-decoration:underline;">Privacy Policy</a> &nbsp;|&nbsp;
+        <a href="#" style="color:#64748b;text-decoration:underline;">Terms &amp; Conditions</a> &nbsp;|&nbsp;
+        <a href="#" style="color:#64748b;text-decoration:underline;">Complaints</a>
+      </p>
+    </form>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section section-anchor" id="faq">
+  <h2 class="section-title">Frequently Asked Questions</h2>
+  <p class="section-subtitle">Answers to common questions about motor finance claims</p>
+
+  <div class="faq-item">
+    <button class="faq-question" onclick="toggleFaq(this)">
+      What is a motor finance commission claim?
+      <span class="faq-toggle">+</span>
+    </button>
+    <div class="faq-answer">
+      A motor finance commission claim relates to situations where a car dealer or broker received a commission from a lender when arranging your finance, but this was not properly disclosed to you. If the commission was linked to the interest rate you paid &#8212; meaning the dealer could earn more by charging you a higher rate &#8212; this may have created an unfair relationship. We help consumers understand whether their agreement may have been affected.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question" onclick="toggleFaq(this)">
+      Who may be affected?
+      <span class="faq-toggle">+</span>
+    </button>
+    <div class="faq-answer">
+      You may be affected if you took out a car finance agreement (such as PCP, HP or Conditional Sale) through a dealer or broker between approximately 2007 and 2024, and you were not clearly told about any commission the dealer would receive. This includes people who no longer own the vehicle or no longer have their paperwork. Not everyone will be eligible &#8212; it depends on the specific circumstances of your agreement.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question" onclick="toggleFaq(this)">
+      What types of car finance may be relevant?
+      <span class="faq-toggle">+</span>
+    </button>
+    <div class="faq-answer">
+      The most commonly affected types of finance include Personal Contract Purchase (PCP), Hire Purchase (HP), and Conditional Sale agreements. Personal loans taken out specifically to purchase a vehicle may also be relevant in some circumstances. If you are unsure what type of finance you had, you can still complete our form and we will help you identify it.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question" onclick="toggleFaq(this)">
+      What is a discretionary commission arrangement?
+      <span class="faq-toggle">+</span>
+    </button>
+    <div class="faq-answer">
+      A Discretionary Commission Arrangement (DCA) is where a dealer or broker had discretion to set your interest rate within a range, with their own commission increasing as the rate went up. This created a potential conflict of interest, as the dealer could benefit from charging you more. The FCA banned DCAs in January 2021, but many historic agreements entered into before that date may have been affected.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question" onclick="toggleFaq(this)">
+      What if I no longer own the vehicle?
+      <span class="faq-toggle">+</span>
+    </button>
+    <div class="faq-answer">
+      Not owning the vehicle anymore does not necessarily prevent you from checking whether your agreement was affected. The key issue is the fairness of the finance agreement itself, not whether you still have the car. We encourage you to complete our form even if the vehicle has been sold, returned, or the agreement has ended.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question" onclick="toggleFaq(this)">
+      What if I do not have my finance agreement?
+      <span class="faq-toggle">+</span>
+    </button>
+    <div class="faq-answer">
+      You do not need to have your original paperwork to check your potential eligibility. We may be able to help identify your agreement using other details, such as the vehicle registration, the approximate date, the lender&#8217;s name, or the dealership. Provide as much information as you can remember.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question" onclick="toggleFaq(this)">
+      What if I cannot remember the lender?
+      <span class="faq-toggle">+</span>
+    </button>
+    <div class="faq-answer">
+      If you cannot remember the name of your finance provider, we may still be able to help. Details such as the dealership where you bought the car, the vehicle registration, and the approximate date of the agreement can help us identify the lender. Complete the form with whatever information you have.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question" onclick="toggleFaq(this)">
+      Can I check more than one vehicle?
+      <span class="faq-toggle">+</span>
+    </button>
+    <div class="faq-answer">
+      Yes. If you have had multiple car finance agreements that may have been affected, you can submit a separate enquiry for each one, or include details of multiple agreements in your message. Each agreement is assessed individually based on its own circumstances.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question" onclick="toggleFaq(this)">
+      Does it cost anything to check my eligibility?
+      <span class="faq-toggle">+</span>
+    </button>
+    <div class="faq-answer">
+      No. Checking your initial eligibility with ClaimCraft is completely free and there is no obligation to continue with any claim. If you decide to proceed and we are able to assist you, any fees will be explained clearly before you commit to anything.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question" onclick="toggleFaq(this)">
+      Does completing the form mean I will receive compensation?
+      <span class="faq-toggle">+</span>
+    </button>
+    <div class="faq-answer">
+      No. Completing our form does not guarantee that you have a claim or that you will receive compensation. We will review your information and contact you to explain whether your circumstances may be relevant and what steps, if any, might be appropriate. Eligibility depends on the specific details of your finance agreement and the current regulatory framework.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question" onclick="toggleFaq(this)">
+      How long will it take to receive a response?
+      <span class="faq-toggle">+</span>
+    </button>
+    <div class="faq-answer">
+      We aim to review new enquiries as quickly as possible and will contact you using the details you have provided. The time required for any subsequent steps will depend on the circumstances, the lender involved, and the current regulatory position.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question" onclick="toggleFaq(this)">
+      What is happening with the FCA Motor Finance Redress Scheme?
+      <span class="faq-toggle">+</span>
+    </button>
+    <div class="faq-answer">
+      The FCA introduced the Motor Finance Consumer Redress Scheme in March 2026 following the Supreme Court judgment in <em>Johnson v FirstRand Bank</em>. However, parts of the scheme have been suspended by the Upper Tribunal pending the outcome of legal challenges. As a result, firms are not currently required to calculate or pay compensation under the original timetable. If the scheme proceeds after the legal challenges, payments are expected to begin in 2027 at the earliest. The FCA has also told firms to prepare for a possible &#8220;no scheme&#8221; scenario. The regulatory position may change, and we will keep our customers informed of any relevant developments.
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact-section section-anchor" id="contact">
+  <h2 class="section-title">Contact Us</h2>
+  <p class="section-subtitle">Get in touch with our team</p>
+  <div class="contact-methods">
+    <div class="contact-method">
+      <div class="contact-icon">&#128231;</div>
+      <h4>Email</h4>
+      <a href="mailto:info@claimcraft.co.uk">info@claimcraft.co.uk</a>
+      <p>We aim to respond within 24 hours</p>
+    </div>
+    <div class="contact-method">
+      <div class="contact-icon">&#128222;</div>
+      <h4>Phone</h4>
+      <a href="tel:+447344537884">07344 537884</a>
+      <p>Available during business hours</p>
+    </div>
+    <div class="contact-method">
+      <div class="contact-icon">&#128172;</div>
+      <h4>WhatsApp</h4>
+      <a href="https://wa.me/447344537884" target="_blank" rel="noopener">07344 537884</a>
+      <p>Message us anytime</p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-links">
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms &amp; Conditions</a>
+    <a href="#">Complaints</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="footer-contact">
+    <a href="mailto:info@claimcraft.co.uk">&#128231; info@claimcraft.co.uk</a>
+    <a href="tel:+447344537884">&#128222; 07344 537884</a>
+    <a href="https://wa.me/447344537884" target="_blank" rel="noopener">&#128172; WhatsApp</a>
+  </div>
+  <div class="footer-badges">
+    <span class="footer-badge">&#128274; GDPR Compliant</span>
+    <span class="footer-badge">&#10003; No Win, No Fee</span>
+    <span class="footer-badge">&#128205; UK-Based Support</span>
+  </div>
+  <div class="disclaimer">
+    <strong>Important Disclaimer:</strong> Information on this website is general information and does not constitute legal or financial advice. ClaimCraft is not FCA-authorised or FCA-regulated. We do not guarantee compensation or claim outcomes. Eligibility depends on the circumstances of your individual finance agreement and the current regulatory framework. The FCA Motor Finance Consumer Redress Scheme is currently subject to legal challenge and parts of the scheme are suspended. No payment is guaranteed. If you need regulated financial advice, please consult an FCA-authorised adviser. The FCA does not endorse ClaimCraft.
+  </div>
+  <div class="footer-bottom">
+    &copy; 2026 ClaimCraft. All rights reserved.
+  </div>
+</footer>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/447344537884" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">&#128172;</a>
+
+<!-- Scroll to Top -->
+<button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Scroll to top">&#8593;</button>
+
+<script>
+// Mobile menu
+function toggleMenu() {
+  const menu = document.getElementById('mobileMenu');
+  const btn = document.querySelector('.menu-btn');
+  const isOpen = menu.classList.toggle('active');
+  btn.setAttribute('aria-expanded', isOpen);
+}
+
+// Close mobile menu on outside click
+document.addEventListener('click', function(e) {
+  const menu = document.getElementById('mobileMenu');
+  const btn = document.querySelector('.menu-btn');
+  const nav = document.querySelector('.nav-wrapper');
+  if (menu.classList.contains('active') && !nav.contains(e.target)) {
+    menu.classList.remove('active');
+    btn.setAttribute('aria-expanded', 'false');
+  }
+});
+
+// FAQ accordion
+function toggleFaq(btn) {
+  const item = btn.parentElement;
+  const isOpen = item.classList.contains('open');
+  // Close all others
+  document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+  if (!isOpen) {
+    item.classList.add('open');
+  }
+}
+
+// Scroll to top visibility
+const scrollTopBtn = document.getElementById('scrollTop');
+window.addEventListener('scroll', function() {
+  if (window.scrollY > 500) {
+    scrollTopBtn.style.display = 'flex';
+  } else {
+    scrollTopBtn.style.display = 'none';
+  }
+});
+
+// ===== CLAIM ELIGIBILITY CHECKER =====
+let currentStep = 1;
+const totalSteps = 6;
+const answers = {};
+
+function updateProgress() {
+  const pct = ((currentStep - 1) / totalSteps) * 100;
+  document.getElementById('progressFill').style.width = pct + '%';
+  document.getElementById('progressText').textContent = 'Question ' + currentStep + ' of ' + totalSteps;
+}
+
+function showStep(n) {
+  document.querySelectorAll('.question-step').forEach(s => s.classList.remove('active'));
+  const step = document.querySelector('.question-step[data-step="' + n + '"]');
+  if (step) step.classList.add('active');
+
+  document.getElementById('backBtn').disabled = (n === 1);
+  document.getElementById('continueBtn').textContent = (n === totalSteps) ? 'See Result \u2192' : 'Continue \u2192';
+
+  // Hide results
+  document.querySelectorAll('.result-screen').forEach(r => r.classList.remove('active'));
+  document.getElementById('checkerNav').style.display = 'flex';
+  document.querySelector('.progress-bar').style.display = 'block';
+  document.getElementById('progressText').style.display = 'block';
+  document.querySelector('.checker-header').style.display = 'block';
+
+  updateProgress();
+}
+
+function selectOption(btn, stepNum) {
+  const step = document.querySelector('.question-step[data-step="' + stepNum + '"]');
+  step.querySelectorAll('.option-btn').forEach(b => b.classList.remove('selected'));
+  btn.classList.add('selected');
+  answers['q' + stepNum] = btn.dataset.value;
+  document.getElementById('error' + stepNum).classList.remove('show');
+}
+
+function goNext() {
+  // Validate current step
+  if (currentStep >= 1 && currentStep <= 3) {
+    if (!answers['q' + currentStep]) {
+      document.getElementById('error' + currentStep).classList.add('show');
+      return;
+    }
+  }
+  if (currentStep === 5) {
+    if (!answers['q5']) {
+      document.getElementById('error5').classList.add('show');
+      return;
+    }
+  }
+  if (currentStep === 6) {
+    // Validate contact fields
+    const name = document.getElementById('cfName').value.trim();
+    const phone = document.getElementById('cfPhone').value.trim();
+    const email = document.getElementById('cfEmail').value.trim();
+    let valid = true;
+    if (!name) { document.getElementById('errorName').classList.add('show'); valid = false; }
+    else document.getElementById('errorName').classList.remove('show');
+    if (!phone) { document.getElementById('errorPhone').classList.add('show'); valid = false; }
+    else document.getElementById('errorPhone').classList.remove('show');
+    if (!email || !email.includes('@')) { document.getElementById('errorEmail').classList.add('show'); valid = false; }
+    else document.getElementById('errorEmail').classList.remove('show');
+    if (!valid) return;
+
+    showResult();
+    return;
+  }
+
+  if (currentStep < totalSteps) {
+    currentStep++;
+    showStep(currentStep);
+  }
+}
+
+function goBack() {
+  if (currentStep > 1) {
+    currentStep--;
+    showStep(currentStep);
+  }
+}
+
+function calculateResult() {
+  const q1 = answers.q1; // finance agreement
+  const q2 = answers.q2; // period
+  const q3 = answers.q3; // dealer/broker
+
+  if (q1 === 'No' || q2 === 'No') {
+    return 'unlikely';
+  }
+  if (q1 === 'Not sure' || q2 === 'Not sure' || q3 === 'Not sure') {
+    return 'moreinfo';
+  }
+  if (q1 === 'Yes' && q2 === 'Yes' && q3 === 'Yes') {
+    return 'eligible';
+  }
+  // q3 = No
+  return 'moreinfo';
+}
+
+function showResult() {
+  const result = calculateResult();
+  answers.result = result;
+
+  // Hide questions and nav
+  document.querySelectorAll('.question-step').forEach(s => s.classList.remove('active'));
+  document.getElementById('checkerNav').style.display = 'none';
+  document.querySelector('.progress-bar').style.display = 'none';
+  document.getElementById('progressText').style.display = 'none';
+  document.querySelector('.checker-header').style.display = 'none';
+
+  // Show result screen
+  const resultMap = {
+    'eligible': 'resultEligible',
+    'moreinfo': 'resultMoreInfo',
+    'unlikely': 'resultUnlikely'
+  };
+  document.getElementById(resultMap[result]).classList.add('active');
+
+  // Inject contact fields into result screen
+  const fieldsHTML = `
+    <label>Full Name <span class="required">*</span></label>
+    <input type="text" class="checker-input" id="resName" value="${document.getElementById('cfName').value}">
+    <label>Phone Number <span class="required">*</span></label>
+    <input type="tel" class="checker-input" id="resPhone" value="${document.getElementById('cfPhone').value}">
+    <label>Email Address <span class="required">*</span></label>
+    <input type="email" class="checker-input" id="resEmail" value="${document.getElementById('cfEmail').value}">
+    <label>Vehicle Registration</label>
+    <input type="text" class="checker-input" id="resReg" value="${document.getElementById('cfReg').value}">
+    <label>Optional Message</label>
+    <textarea class="checker-input" id="resMessage" rows="2">${document.getElementById('cfMessage').value}</textarea>
+  `;
+
+  const fieldContainers = {
+    'eligible': 'eligibleFields',
+    'moreinfo': 'moreinfoFields',
+    'unlikely': 'unlikelyFields'
+  };
+  document.getElementById(fieldContainers[result]).innerHTML = fieldsHTML;
+}
+
+async function submitResult(resultType) {
+  const btn = document.getElementById(resultType + 'Submit');
+  const status = document.getElementById(resultType + 'Status');
+
+  // Validate
+  const name = document.getElementById('resName').value.trim();
+  const phone = document.getElementById('resPhone').value.trim();
+  const email = document.getElementById('resEmail').value.trim();
+  if (!name || !phone || !email || !email.includes('@')) {
+    status.textContent = 'Please fill in all required fields correctly.';
+    status.className = 'submit-status error';
+    return;
+  }
+
+  btn.disabled = true;
+  status.textContent = 'Sending your enquiry...';
+  status.className = 'submit-status sending';
+
+  const formData = new FormData();
+  formData.append('claim_type', 'Car Finance Claim');
+  formData.append('finance_type', answers.q1 || '');
+  formData.append('agreement_period', answers.q2 || '');
+  formData.append('dealer_or_broker', answers.q3 || '');
+  formData.append('finance_provider', document.getElementById('financeProvider').value.trim());
+  formData.append('vehicle_ownership', answers.q5 || '');
+  formData.append('eligibility_result', resultType === 'eligible' ? 'You may be eligible' : resultType === 'moreinfo' ? 'We need more information' : 'You may be unlikely to qualify');
+  formData.append('full_name', name);
+  formData.append('phone', phone);
+  formData.append('email', email);
+  formData.append('vehicle_reg', document.getElementById('resReg').value.trim());
+  formData.append('message', document.getElementById('resMessage').value.trim());
+  formData.append('_gotcha', '');
+
+  try {
+    const response = await fetch('https://formspree.io/f/xgognyzk', {
+      method: 'POST',
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    });
+    if (response.ok) {
+      status.textContent = 'Thank you. Your eligibility enquiry has been received. We will review the information and contact you using the details provided.';
+      status.className = 'submit-status success';
+      btn.textContent = 'Sent \u2713';
+    } else {
+      throw new Error('Server error');
+    }
+  } catch (e) {
+    status.textContent = 'Something went wrong. Please try again or contact us directly.';
+    status.className = 'submit-status error';
+    btn.disabled = false;
+  }
+}
+
+// ===== FULL CONTACT FORM =====
+document.getElementById('claimForm').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const form = this;
+  const status = document.getElementById('formStatus');
+  const btn = form.querySelector('button[type="submit"]');
+
+  btn.disabled = true;
+  status.style.display = 'block';
+  status.textContent = 'Sending...';
+  status.style.background = 'rgba(251,191,36,0.15)';
+  status.style.color = '#fbbf24';
+
+  try {
+    const response = await fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    });
+    if (response.ok) {
+      status.textContent = 'Thank you. Your eligibility enquiry has been received. We will review the information and contact you using the details provided.';
+      status.style.background = 'rgba(34,197,94,0.15)';
+      status.style.color = '#22c55e';
+      form.reset();
+    } else {
+      throw new Error('Server error');
+    }
+  } catch (e) {
+    status.textContent = 'Something went wrong. Please try again.';
+    status.style.background = 'rgba(248,113,113,0.15)';
+    status.style.color = '#f87171';
+  }
+  btn.disabled = false;
+});
+</script>
+
+</body>
+</html>
